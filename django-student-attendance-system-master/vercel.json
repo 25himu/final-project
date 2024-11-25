@@ -1,12 +1,25 @@
 {
 
-    "rewrites":[
+"builds":[
+{
+"src":"django-student-attendance-system-master/student_management_system/wsgi.py",
+ "use":"@vercel/python",
+  "config":{"maxLambdaSize":"2000mb","runtime":"python3.10.9"}  
 
-            {"source":"/(.*)","destination":"/"}
 
+    
+}   
+],
+
+    "routes":[
+
+{
+"src":"/(.*)",
+ "dest":"django-student-attendance-system-master/student_management_system/wsgi.py"   
+    
+}
+
+        
     ]
-
-
-
 
 }
