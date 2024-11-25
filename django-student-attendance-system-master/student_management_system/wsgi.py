@@ -16,6 +16,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'student_management_system.setti
 application = get_wsgi_application()
 
 
-
+app = application
 
 
